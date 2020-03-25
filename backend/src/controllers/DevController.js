@@ -39,7 +39,6 @@ module.exports = {
             });
 
             // Filtrar as conexões que estão há no máximo 10km de distância
-            // e que o novo dev tenha pelo menos uma das tecnologias filtradas
 
             const sendSocketMessageTo = findConnections(
                 { latitude, longitude },
@@ -49,9 +48,4 @@ module.exports = {
         }
         return response.json(dev);
     },
-    // async update(){
-        // atualizar : name, avatar_url, bio, localização e tecnologias
-    //},
-    // async destroy(){
-    //},
 }
